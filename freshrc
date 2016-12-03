@@ -2,6 +2,9 @@
 fresh freshshell/fresh contrib/source-build.sh --file=~/.bash_profile                   # Source these files from Fresh's shell.sh file it builds
 fresh freshshell/fresh contrib/source-build.sh --file=~/.bashrc
 
+##### Aliases
+fresh jasoncodes/dotfiles shell/aliases/git.sh
+
 ##### Executables
 fresh-options --bin
   fresh freshshell/fresh bin/fresh                                                      # Fresh!
