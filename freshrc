@@ -5,6 +5,7 @@ fresh freshshell/fresh contrib/source-build.sh --file=~/.bashrc
 ##### Aliases
 fresh jasoncodes/dotfiles shell/aliases/git.sh
 fresh jonathonMA/dotfiles shell/aliases/aliases.sh
+fresh config/path.sh
 
 ##### Executables
 fresh-options --bin
