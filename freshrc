@@ -2,17 +2,25 @@
 fresh freshshell/fresh contrib/source-build.sh --file=~/.bash_profile                   # Source these files from Fresh's shell.sh file it builds
 fresh freshshell/fresh contrib/source-build.sh --file=~/.bashrc
 
+fresh config/path.sh
 fresh JonathonMA/dotfiles shell/config/prompt.sh
 
 ##### Aliases
 fresh jasoncodes/dotfiles shell/aliases/git.sh
 fresh jonathonMA/dotfiles shell/aliases/aliases.sh
-fresh config/path.sh
+fresh jonathonMA/dotfiles shell/aliases/gnu_ls.sh
 
 ##### Executables
 fresh-options --bin
   fresh freshshell/fresh bin/fresh                                                      # Fresh!
 fresh-options
 
+##### Shell
+fresh jonathonMA/dotfiles shell/config/dircolors.sh
+fresh chriskempson/base16-shell scripts/base16-solarized-dark.sh
+
 ##### Config
 fresh jonathonMA/dotfiles shell/config/mac_completion.sh
+fresh jonathonMA/dotfiles shell/config/bsd_ls.sh
+fresh seebi/dircolors-solarized dircolors.ansi-dark --file=~/.dircolors
+fresh seebi/tmux-colors-solarized tmuxcolors-dark.conf --file=~/.tmux.conf
