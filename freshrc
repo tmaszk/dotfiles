@@ -26,3 +26,25 @@ fresh jonathonMA/dotfiles shell/config/mac_completion.sh
 fresh jonathonMA/dotfiles shell/config/bsd_ls.sh
 fresh seebi/dircolors-solarized dircolors.ansi-dark --file=~/.dircolors
 fresh seebi/tmux-colors-solarized tmuxcolors-dark.conf --file=~/.tmux.conf
+
+##### Vim
+fresh vim/base.vim --file=~/.vimrc
+fresh-options --file=~/.vimrc
+  fresh jasoncodes/dotfiles vim/config/auto_mkdir.vim
+  fresh jasoncodes/dotfiles vim/config/completion.vim
+  fresh jasoncodes/dotfiles vim/config/format.vim
+  fresh jasoncodes/dotfiles vim/config/search.vim
+  fresh jasoncodes/dotfiles vim/config/tags.vim
+  fresh jasoncodes/dotfiles vim/config/bubbling.vim
+
+  fresh vim/keybindings/\*.vim
+  fresh jasoncodes/dotfiles vim/plugins/ruby.vim
+  fresh jasoncodes/dotfiles vim/plugins/ctrlp.vim
+  fresh jasoncodes/dotfiles vim/plugins/unimpaired.vim
+  fresh nathanaelkane/dotfiles vim/plugins/gitgutter.vim
+
+  fresh vim/plugins/\*.vim
+  fresh vim/config/\*.vim
+
+  fresh vim/finish.vim
+fresh-options
