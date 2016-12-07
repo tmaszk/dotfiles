@@ -32,6 +32,9 @@ set noswapfile
 " Bindings
 map <Leader>sw :w<Cr>
 
+" haha mouse support
+set mouse=a
+
 " Window
 syntax enable       " Syntax highlighting
 set hidden          " Allow hiding buffers with unsaved changes
