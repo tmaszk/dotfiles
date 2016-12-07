@@ -26,6 +26,7 @@ fresh jonathonMA/dotfiles shell/config/mac_completion.sh
 fresh jonathonMA/dotfiles shell/config/bsd_ls.sh
 fresh seebi/dircolors-solarized dircolors.ansi-dark --file=~/.dircolors
 fresh seebi/tmux-colors-solarized tmuxcolors-dark.conf --file=~/.tmux.conf
+fresh config/inputrc --file
 
 ##### Vim
 fresh vim/base.vim --file=~/.vimrc
