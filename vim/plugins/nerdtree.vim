@@ -1,5 +1,6 @@
 "NERD-Tree
 Bundle 'scrooloose/nerdtree'
+Bundle 'Xuyuanp/nerdtree-git-plugin'
 
 " Nerd Tree mapppings
 noremap <Leader>. :NERDTreeToggle<CR>
