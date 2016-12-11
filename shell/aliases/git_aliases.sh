@@ -16,6 +16,10 @@ function gglg() {
   fi
 }
 
+# read the current branch
+function git_current_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
 
 # from  https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh
 
