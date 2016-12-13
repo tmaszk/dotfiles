@@ -19,6 +19,7 @@ fresh-options
 fresh jonathonMA/dotfiles shell/config/dircolors.sh
 fresh chriskempson/base16-shell scripts/base16-solarized-dark.sh
 fresh shell/config/history.sh
+fresh shell/config/direnv.sh
 
 ##### Config
 fresh jonathonMA/dotfiles shell/config/mac_completion.sh
