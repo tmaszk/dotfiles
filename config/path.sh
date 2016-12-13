@@ -20,6 +20,7 @@ prepend_path '/usr/local/sbin'
 append_path "$HOME/bin"
 
 prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
+prepend_path "~/.rbenv/shims"
 
 if [ -f "$HOME/.bashrc.local.path" ]; then
   source "$HOME/.bashrc.local.path"
