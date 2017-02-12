@@ -2,7 +2,7 @@
 fresh freshshell/fresh contrib/source-build.sh --file=~/.bash_profile                   # Source these files from Fresh's shell.sh file it builds
 fresh freshshell/fresh contrib/source-build.sh --file=~/.bashrc
 
-fresh config/path.sh
+fresh shell/path/path.sh
 fresh JonathonMA/dotfiles shell/config/prompt.sh
 
 ##### Aliases
