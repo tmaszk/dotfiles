@@ -15,6 +15,11 @@ fresh-options --bin
   fresh freshshell/fresh bin/fresh                                                      # Fresh!
 fresh-options
 
+fresh-options --file
+  fresh 'config/*'
+fresh-options
+
+
 ##### Shell
 fresh jonathonMA/dotfiles shell/config/dircolors.sh
 fresh chriskempson/base16-shell scripts/base16-solarized-dark.sh

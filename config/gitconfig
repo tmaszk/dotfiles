@@ -1,0 +1,60 @@
+# config/gitconfig
+
+[include]
+  path = .gitconfig.local
+[alias]
+	st = status
+	di = diff
+	dc = diff --cached
+[core]
+	excludesfile = ~/.gitignore_global
+[color]
+	ui = auto
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[alias]
+  bubble = merge --no-ff
+  fixup = commit --fixup
+  st = status
+  ss = show --stat -p
+  ci = commit
+  co = checkout
+  con = rebase --continue
+  di = diff
+  dc = diff --cached
+  dcs = diff --cached --stat
+  amend = commit --amend
+  aa = add --all
+  b = branch
+  pull = pull --ff-only
+  ds = diff --stat=160,120
+  dh1 = diff HEAD~1
+  head = !git l -1
+  h = !git head
+  hp = "!. ~/.githelpers && show_git_head"
+  r = !git l -30
+  ra = !git r --all
+  rim = rebase -i --autosquash origin/master
+  bm = "!f() { git branch $1 origin/master --no-track && git co $1; }; f"
+  l = "!. ~/.githelpers && pretty_git_log"
+  la = !git l --all
+  lb = !git l origin/master..@
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[rebase]
+  autosquash = true
+[gc]
+  auto = 0
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+  required = true
