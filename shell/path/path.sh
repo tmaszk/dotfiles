@@ -1,5 +1,3 @@
-# PATH=$PATH:/usr/local/bin:usr/local/git/bin
-
 function prepend_path() {
   if [ -d "$1" ]; then
     PATH="$1:$PATH"
@@ -13,8 +11,6 @@ function append_path() {
 
 PATH=$(getconf PATH)
 
-prepend_path '/usr/sbin'
-prepend_path '/sbin'
 prepend_path '/usr/local/bin'
 prepend_path '/usr/local/sbin'
 append_path "$HOME/bin"
