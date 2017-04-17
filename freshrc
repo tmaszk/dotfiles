@@ -7,6 +7,7 @@ fresh JonathonMA/dotfiles shell/config/prompt.sh
 
 ##### Aliases
 fresh shell/aliases/git_aliases.sh
+fresh shell/aliases/docker_aliases.sh
 fresh jonathonMA/dotfiles shell/aliases/aliases.sh
 fresh jonathonMA/dotfiles shell/aliases/gnu_ls.sh
 
