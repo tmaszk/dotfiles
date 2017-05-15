@@ -54,3 +54,6 @@ runtime macros/matchit.vim
 colorscheme hybrid
 set background=dark
 set t_Co=256                  " I use 16-color solarized, but...
+
+" Allow mouse to work beyond column 220
+set ttymouse=sgr
