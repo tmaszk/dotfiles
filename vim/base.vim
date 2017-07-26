@@ -5,3 +5,5 @@ let mapleader = ","
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
+
+set guifont=Menlo\ Regular:h20
