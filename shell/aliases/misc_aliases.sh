@@ -21,3 +21,5 @@ alias fgrep='fgrep --color=auto'
 # install  colordiff package :)
 alias diff='colordiff'
 
+# start chrome with ignnore-certificate-errors wheich helps with SKYUK SPAs
+alias chromei='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors'
