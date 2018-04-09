@@ -14,6 +14,7 @@ PATH=$(getconf PATH)
 prepend_path '/usr/local/bin'
 prepend_path '/usr/local/sbin'
 append_path "$HOME/bin"
+append_path "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
 prepend_path "~/.rbenv/shims"
