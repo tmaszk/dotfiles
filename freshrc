@@ -49,7 +49,6 @@ fresh-options --file=~/.vimrc
   fresh jasoncodes/dotfiles vim/plugins/ruby.vim
   fresh jasoncodes/dotfiles vim/plugins/ctrlp.vim
   fresh jasoncodes/dotfiles vim/plugins/unimpaired.vim
-  fresh nathanaelkane/dotfiles vim/plugins/gitgutter.vim
 
   fresh vim/plugins/\*.vim
   fresh vim/config/\*.vim
