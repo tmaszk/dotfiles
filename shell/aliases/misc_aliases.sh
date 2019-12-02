@@ -23,3 +23,13 @@ alias diff='colordiff'
 
 # start chrome with ignnore-certificate-errors wheich helps with SKYUK SPAs
 alias chromei='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors'
+
+# remove all directories named X under current directory
+rmdirs() {
+  if [ $# -eq 0 ]
+    then
+      echo "No arguments supplied"
+  else
+    find . -type d -name "$1" -exec rm -rf {} \;
+  fi
+}
