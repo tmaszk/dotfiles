@@ -16,6 +16,7 @@ prepend_path '/usr/local/sbin'
 append_path $HOME'/bin'
 append_path '/Applications/Visual Studio Code.app/Contents/Resources/app/bin'
 append_path $HOME'/.dotnet/tools'
+append_path '/Library/Frameworks/Mono.framework/Versions/Current/bin'
 
 prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
 prepend_path $HOME'/.rbenv/shims'
