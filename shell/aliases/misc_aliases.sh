@@ -24,6 +24,9 @@ alias diff='colordiff'
 # start chrome with ignnore-certificate-errors wheich helps with SKYUK SPAs
 alias chromei='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ignore-certificate-errors'
 
+# generate lower case uuids
+alias uuid='uuidgen | tr "[:upper:]" "[:lower:]"'
+
 # remove all directories named X under current directory
 rmdirs() {
   if [ $# -eq 0 ]
